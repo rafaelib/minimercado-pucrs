@@ -3,35 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <title>Higiene e Limpeza - Mini Mercado PUCRS</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Higiene e Limpeza</h1>
-      <nav>
-        <a href="index.html">Início</a> |
-        <a href="frutas_verduras.html">Frutas e Verduras</a> |
-        <a href="alimentos_nao_pereciveis.html">Alimentos Não Perecíveis</a> |
-        <a href="higiene_limpeza.html">Higiene e Limpeza</a>
-      </nav>
+    <header class="bg-primary text-white p-3 mb-4">
+      <div class="container">
+        <h1 class="h3">Higiene e Limpeza</h1>
+        <nav>
+          <a href="index.html" class="text-white me-3">Início</a>
+          <a href="frutas_verduras.html" class="text-white me-3"
+            >Frutas e Verduras</a
+          >
+          <a href="alimentos_nao_pereciveis.html" class="text-white me-3"
+            >Alimentos Não Perecíveis</a
+          >
+          <a href="higiene_limpeza.html" class="text-white"
+            >Higiene e Limpeza</a
+          >
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h2>Produtos da categoria: Higiene e Limpeza</h2>
-      <section>
-        <h3>Sabonete</h3>
-        <img src="assets/sabonete.jpg" alt="Sabonete" width="150" />
-        <p>Sabonete suave, limpa e hidrata a pele, fragrância agradável.</p>
-      </section>
-      <section>
-        <h3>Detergente</h3>
-        <img src="assets/detergente.jpg" alt="Detergente" width="150" />
-        <p>Detergente líquido, eficiente na limpeza de louças e superfícies.</p>
-      </section>
+    <main class="container mb-5">
+      <h2 class="mb-4">Produtos da categoria: Higiene e Limpeza</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card">
+            <img
+              src="assets/sabonete.jpg"
+              class="card-img-top"
+              alt="Sabonete"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sabonete</h5>
+              <p class="card-text">
+                Sabonete suave, limpa e hidrata a pele, fragrância agradável.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <img
+              src="assets/detergente.jpg"
+              class="card-img-top"
+              alt="Detergente"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Detergente</h5>
+              <p class="card-text">
+                Detergente líquido, eficiente na limpeza de louças e
+                superfícies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
+    <footer class="bg-light text-center py-4 border-top">
       <p>Endereço: Av. Ipiranga, 1234 - Porto Alegre, RS</p>
       <p>Contato: rafaeliunes97@gmail.com</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

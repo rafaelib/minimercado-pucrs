@@ -3,40 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <title>Frutas e Verduras - Mini Mercado PUCRS</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Frutas e Verduras</h1>
-      <nav>
-        <a href="index.html">Início</a> |
-        <a href="frutas_verduras.html">Frutas e Verduras</a> |
-        <a href="alimentos_nao_pereciveis.html">Alimentos Não Perecíveis</a> |
-        <a href="higiene_limpeza.html">Higiene e Limpeza</a>
-      </nav>
+    <header class="bg-success text-white p-3 mb-4">
+      <div class="container">
+        <h1 class="h3">Frutas e Verduras</h1>
+        <nav>
+          <a href="index.html" class="text-white me-3">Início</a>
+          <a href="frutas_verduras.html" class="text-white me-3"
+            >Frutas e Verduras</a
+          >
+          <a href="alimentos_nao_pereciveis.html" class="text-white me-3"
+            >Alimentos Não Perecíveis</a
+          >
+          <a href="higiene_limpeza.html" class="text-white"
+            >Higiene e Limpeza</a
+          >
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h2>Produtos da categoria: Frutas e Verduras</h2>
-      <section>
-        <h3>Banana</h3>
-        <img src="assets/banana.jpg" alt="Banana" width="150" />
-        <p>
-          Banana fresca, rica em potássio e perfeita para lanches ou vitaminas.
-        </p>
-      </section>
-      <section>
-        <h3>Alface</h3>
-        <img src="assets/alface.jpg" alt="Alface" width="150" />
-        <p>
-          Alface crocante, ideal para saladas e sanduíches, fonte de fibras e
-          vitaminas.
-        </p>
-      </section>
+    <main class="container mb-5">
+      <h2 class="mb-4">Produtos da categoria: Frutas e Verduras</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="assets/banana.jpg" class="card-img-top" alt="Banana" />
+            <div class="card-body">
+              <h5 class="card-title">Banana</h5>
+              <p class="card-text">
+                Banana fresca, rica em potássio e perfeita para lanches ou
+                vitaminas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <img src="assets/alface.jpg" class="card-img-top" alt="Alface" />
+            <div class="card-body">
+              <h5 class="card-title">Alface</h5>
+              <p class="card-text">
+                Alface crocante, ideal para saladas e sanduíches, fonte de
+                fibras e vitaminas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
+    <footer class="bg-light text-center py-4 border-top">
       <p>Endereço: Av. Ipiranga, 1234 - Porto Alegre, RS</p>
       <p>Contato: rafaeliunes97@gmail.com</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
